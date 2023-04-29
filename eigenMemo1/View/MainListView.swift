@@ -18,7 +18,12 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { memo in
-                MemoCell(memo: memo)    // ExtractSubView 로 view를 분리, 가독성 높임
+                NavigationLink {
+                    DetailView(memo: memo)
+                } label: {
+                    MemoCell(memo: memo)    // ExtractSubView 로 view를 분리, 가독성 높임
+                }
+                
             }
             .listStyle(.plain)
             .navigationTitle("내 메모")    // modifier라고 부르는 특별한 메서드로 속성을 바꾸거나 view를 조작.
