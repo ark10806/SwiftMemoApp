@@ -13,6 +13,8 @@ struct MainListView: View {
     // 즉, static 변수로 사용하는 것.
     @EnvironmentObject var store: MemoStore
     
+    @State private var showComposer: Bool = false
+    
     var body: some View {
         NavigationView {
             List(store.list) { memo in
@@ -20,6 +22,16 @@ struct MainListView: View {
             }
             .listStyle(.plain)
             .navigationTitle("내 메모")    // modifier라고 부르는 특별한 메서드로 속성을 바꾸거나 view를 조작.
+            .toolbar {
+                Button {
+                    showComposer = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $showComposer) {
+                ComposeView()
+            }
         }
     }
 }
