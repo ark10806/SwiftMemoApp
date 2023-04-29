@@ -13,6 +13,7 @@
 		CF28629729F2E92F008D74A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF28629629F2E92F008D74A6 /* Preview Assets.xcassets */; };
 		CF28629929F2E92F008D74A6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF28629829F2E92F008D74A6 /* Persistence.swift */; };
 		CF28629C29F2E92F008D74A6 /* eigenMemo1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF28629A29F2E92F008D74A6 /* eigenMemo1.xcdatamodeld */; };
+		CF2FDCCE29FD1AF7001210A8 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FDCCD29FD1AF7001210A8 /* MemoCell.swift */; };
 		CF8B592829F66E97004AF82E /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B592729F66E97004AF82E /* MainListView.swift */; };
 		CF8B592C29F66F1F004AF82E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B592B29F66F1F004AF82E /* Memo.swift */; };
 		CF8B592E29F66F9B004AF82E /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B592D29F66F9B004AF82E /* MemoStore.swift */; };
@@ -27,6 +28,7 @@
 		CF28629829F2E92F008D74A6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CF28629B29F2E92F008D74A6 /* eigenMemo1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eigenMemo1.xcdatamodel; sourceTree = "<group>"; };
 		CF28629D29F2E92F008D74A6 /* eigenMemo1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eigenMemo1.entitlements; sourceTree = "<group>"; };
+		CF2FDCCD29FD1AF7001210A8 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		CF8B592729F66E97004AF82E /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		CF8B592B29F66F1F004AF82E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		CF8B592D29F66F9B004AF82E /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		CF28628E29F2E92F008D74A6 /* eigenMemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				CF2FDCCC29FD1AD4001210A8 /* View */,
 				CF8B592A29F66EDC004AF82E /* Memory */,
 				CF8B592929F66ED2004AF82E /* CoreData */,
 				CF28628F29F2E92F008D74A6 /* eigenMemo1App.swift */,
@@ -80,6 +83,14 @@
 				CF28629629F2E92F008D74A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF2FDCCC29FD1AD4001210A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF2FDCCD29FD1AF7001210A8 /* MemoCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CF8B592929F66ED2004AF82E /* CoreData */ = {
@@ -177,6 +188,7 @@
 				CF8B592E29F66F9B004AF82E /* MemoStore.swift in Sources */,
 				CF28629C29F2E92F008D74A6 /* eigenMemo1.xcdatamodeld in Sources */,
 				CF28629029F2E92F008D74A6 /* eigenMemo1App.swift in Sources */,
+				CF2FDCCE29FD1AF7001210A8 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
