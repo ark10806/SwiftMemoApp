@@ -16,6 +16,7 @@
 		CF2FDCCE29FD1AF7001210A8 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FDCCD29FD1AF7001210A8 /* MemoCell.swift */; };
 		CF2FDCD029FD1BC2001210A8 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FDCCF29FD1BC2001210A8 /* ComposeView.swift */; };
 		CF2FDCD229FD3A07001210A8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FDCD129FD3A07001210A8 /* DetailView.swift */; };
+		CF6A6ECF29FE540300120FB3 /* Clipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A6ECE29FE540300120FB3 /* Clipboard.swift */; };
 		CF8B592829F66E97004AF82E /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B592729F66E97004AF82E /* MainListView.swift */; };
 		CF8B592C29F66F1F004AF82E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B592B29F66F1F004AF82E /* Memo.swift */; };
 		CF8B592E29F66F9B004AF82E /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B592D29F66F9B004AF82E /* MemoStore.swift */; };
@@ -33,6 +34,7 @@
 		CF2FDCCD29FD1AF7001210A8 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		CF2FDCCF29FD1BC2001210A8 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 		CF2FDCD129FD3A07001210A8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CF6A6ECE29FE540300120FB3 /* Clipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard.swift; sourceTree = "<group>"; };
 		CF8B592729F66E97004AF82E /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		CF8B592B29F66F1F004AF82E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		CF8B592D29F66F9B004AF82E /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				CF8B592B29F66F1F004AF82E /* Memo.swift */,
 				CF8B592D29F66F9B004AF82E /* MemoStore.swift */,
+				CF6A6ECE29FE540300120FB3 /* Clipboard.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				CF28629229F2E92F008D74A6 /* ContentView.swift in Sources */,
 				CF2FDCD229FD3A07001210A8 /* DetailView.swift in Sources */,
 				CF2FDCD029FD1BC2001210A8 /* ComposeView.swift in Sources */,
+				CF6A6ECF29FE540300120FB3 /* Clipboard.swift in Sources */,
 				CF8B592C29F66F1F004AF82E /* Memo.swift in Sources */,
 				CF8B592E29F66F9B004AF82E /* MemoStore.swift in Sources */,
 				CF28629C29F2E92F008D74A6 /* eigenMemo1.xcdatamodeld in Sources */,
