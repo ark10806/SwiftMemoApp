@@ -14,7 +14,7 @@ struct eigenMemo1App: App {
 
     var body: some Scene {
         WindowGroup {
-            MainListView()
+            MainListView(clip: Clipboard())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(store)   // MainListView와 이어지는 view에서 동일한 객체에 접근 가능.
         }

@@ -12,7 +12,7 @@ struct MainListView: View {
     // 아래의 store의 생성 시점에 공유데이터에 MemoStore가 존재한다면 그걸 사용.
     // 즉, static 변수로 사용하는 것.
     @EnvironmentObject var store: MemoStore
-    @EnvironmentObject var clip: Clipboard
+    @ObservedObject var clip: Clipboard
     
     @State private var showComposer: Bool = false
     
@@ -41,12 +41,20 @@ struct MainListView: View {
                 ComposeView()
             }
         }
+        HStack {
+            Text(clip.content)
+            Button {
+                clip.startPolling()
+            } label: {
+                Image(systemName: "star.circle")
+            }
+        }
     }
 }
 
 struct MainListView_Previews: PreviewProvider {
     static var previews: some View {
-        MainListView()
+        MainListView(clip: Clipboard())
             .environmentObject(MemoStore())
     }
 }
